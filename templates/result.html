@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result-card">
+            <img src="{{ url_for('uploaded_file', filename=image_file) }}" alt="Uploaded Tomato Leaf">
+            <h2>Predicted Disease: <span>{{ prediction }}</span></h2>
+            <h3>Confidence: <span>{{ confidence }}%</span></h3>
+        </div>
+        <a href="/" class="back-link">Classify Another Image</a>
+    </div>
+</body>
+</html>

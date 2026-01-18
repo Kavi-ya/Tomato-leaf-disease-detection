@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Disease Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🍅 Tomato Leaf Disease Classifier</h1>
+        <p>Upload an image of a tomato leaf to classify its disease.</p>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="file-input" required>
+            <br>
+            <input type="submit" value="Classify" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>
